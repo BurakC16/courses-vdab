@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulier</title>
+<meta charset = "utf-8">
+</head>
+  <body>
+  <p>Heb je ook een recept dat je met de wereld wil delen? Vul hieronder je gegevens in.</p>
+    <form action="pod/cgi-script">
+      <fieldset>
+        <legend>Personalia</legend>
+        <label >Naam*</label>
+        <input type = "text" id="naam" name="naam" required></input><br>
+
+        <label >Voornaam*</label>
+        <input type = "text" id="voornaam" name="voornaam" required></input><br>
+
+        <label>E-mailadres*</label>
+        <input type = "email" id="email" name="email" required></input><br>
+      </fieldset><br>
+
+      <fieldset>
+        <legend>Recept Details</legend>
+        <label>Titel recept*</label>
+        <input type="titel" id="titel" name="titel" required><br>
+
+        <p><label>Soort recept*</label><br>
+          <input type="radio" id="aperitief" name="categorie" value="aperitief" required>
+          <label for="aperitief">Aperitief, aperitiefhapje</label><br>
+          
+          <input type="radio" id="voorgerecht" name="categorie" value="voorgerecht">
+          <label for="voorgerecht">Voorgerecht</label><br>
+          
+          <input type="radio" id="hoofdgerecht" name="categorie" value="hoofdgerecht">
+          <label for="hoofdgerecht">Hoofdgerecht</label><br>
+          
+          <input type="radio" id="dessert" name="categorie" value="dessert">
+          <label for="dessert">Dessert</label><br>
+        </p>
+        
+        </select><br>
+
+        <label for="inhoud">Inhoud recept*</label><br>
+        <textarea id="inhoud" name="inhoud" rows="10" cols="50" maxlength="200" placeholder="Typ je recept"></textarea><br>
+        <input type="submit" value="Versturen">
+        <input type="reset" value="Wissen"><br>
+        
+      </fieldset>
+      <p>Velden met * zijn verplicht.</p>
+    </form>
+  </body>
+</html>
